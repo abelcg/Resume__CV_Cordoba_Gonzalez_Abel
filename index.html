@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CV Fullstack Developer de Abel Córdoba González"
+    />
+    <meta name="keywords" content="CV, resume, porfolio" />
+    <meta name="author" content="Abel Córdoba González" />
+    <title>CV_Cordoba_Gonzalez_Abel</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/favicon/site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      href="/img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- script de fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/844be37ca0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script de jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <!-- navbar -->
+      <nav
+        class="
+          navbar navbar-expand-lg navbar-dark
+          bg-dark
+          fixed-top
+          pb-4
+          d-flex
+          flex-column
+        "
+      >
+        <div class="container">
+          <div>
+            <a class="navbar-brand" href="/index.html">
+              <img
+                class="rounded-circle border border-2"
+                src="/img/avatar-Abel.png"
+                alt="avatar Abel Córdoba González"
+                width="125px"
+                height="auto"
+              />
+            </a>
+          </div>
+          <div>
+            <a href="#">Abel Córdoba González</a>
+          </div>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSidebar"
+            aria-controls="navbarSidebar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="icon-bar top-bar m-1"></span>
+            <span class="icon-bar middle-bar m-1"></span>
+            <span class="icon-bar bottom-bar m-1"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSidebar">
+            <ul class="navbar-nav ms-auto mb-3 mb-lg-1 fs-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active barraNav-link"
+                  aria-current="page"
+                  href="/index.html"
+                  >About me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link barraNav-link" href="/pages/contacto.html"
+                  >Educación y Experiencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link barraNav-link"
+                  href="/pages/acerca_de_nosotros.html"
+                  >Porfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link barraNav-link"
+                  href="/pages/acerca_de_nosotros.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid main-banner" id="main-banner">
+        <canvas class="box" id="box"> </canvas>
+        <div class="content">
+          <h1 class="title">Abel Córdoba González</h1>
+          <p class="desc">FullStack Web Developer</p>
+          <ul class="contact">
+            <li><a href="mailto:abelcg86@gmail.com">abelcg86@gmail.com</a></li>
+            <li>
+              <a target="_top" href="https://github.com/abelcg">Githup</a>
+            </li>
+            <li>
+              <a target="_top" href="https://www.linkedin.com/in/abel-c%C3%B3rdoba-gonz%C3%A1lez-34830b53/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="blur blurTop">
+          <canvas class="canvas" id="blurCanvasTop"></canvas>
+        </div>
+        <div class="blur blurBottom">
+          <canvas
+            width="1000px"
+            height="1000px"
+            class="canvas"
+            id="blurCanvasBottom"
+          ></canvas>
+        </div>
+    </section>
+    <section class="canvas-wrap">
+        <canvas id="canvas-waves"></canvas>
+    </section>
+    </main>
+    <footer></footer>
+    <!-- JavaScript min bootstrap -->
+    <script src="/js/bootstrap.min.js"></script>
+    <!-- script animación scroll del navbar -->
+    <script src="/js/scroolled-nav.js"></script>
+    <script src="/js/waves.js"></script>
+    <script src="/js/particles.js"></script> 
+  </body>
+</html>

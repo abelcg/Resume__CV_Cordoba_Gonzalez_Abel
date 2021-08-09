@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.1;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 66px;
+  font-weight: 700;
+  letter-spacing: 7px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(40, 40, 40);
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  overflow-x: hidden;
+  font-size: 18px;
+}
+a {
+
+  color: white;
+  outline: 0px none;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  outline: 0px none;
+  text-decoration: none;
+}
+
+a:active,
+a:hover,
+a:focus {
+  color: #df2433;
+}
+
+img {
+  border-style: none;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/*------ Navbar ------------- */
+#scroll-height {
+  --bs-scroll-height: 100px;
+}
+/*----- Fin Navbar -----------*/
+/*------------ navbar transparente------------------------ */
+.bg-dark {
+  background: transparent !important;
+  transition: 0.75s;
+}
+/*----------- navbar con background al scrollear --------- */
+.bg-dark.scrolled {
+  background: rgb(40, 40, 40) !important;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: none;
+}
+/*-----------Fin navbar con background al scrollear ----- */
+
+/*---------- Barra debajo de los nav links del navbar--------------- */
+.barraNav-link::after {
+  content: " ";
+  width: 0%;
+  height: 6px;
+  background: #df2433;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.barraNav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+ color: #df2433 !important;
+}
+
+/* --------- Fin Barra debajo de los nav links ---------*/
+
+/*----------- Animación botón hamburguesa --------------*/
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler:hover {
+  background: transparent !important;
+}
+.navbar-toggler .icon-bar {
+  background: #fff;
+  height: 3px;
+  border-radius: 0px;
+  display: block;
+  width: 22px;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 3;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 27% 270%;
+}
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 8% -200%;
+}
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+.nav-link {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+}
+/* ------- Fin Animación botón hamburguesa-------------*/
+/*-------Media Queries Sidebar ----------------------- */
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px; /* ajusta height del navbar */
+    right: 0;
+    padding-top: 0px;
+    padding-left: 125px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    right: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    background: rgb(40, 40, 40);    
+    transition: right 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: right 500ms ease-in-out;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    text-transform: capitalize;
+    font-size: 2em;
+    margin: 20px 0px;
+  }
+}
+/* ------------------------------------------------- */
+
+/* canvas waves */
+.canvas-wrap {
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 68%;
+  left: 0%;
+  transform: translateY(-50%);
+}
+
+#canvas-waves {
+  display: block;
+}
+/* fin canvas waves */
+
+/* del canvas----------------------- */
+#main-banner {
+  font-family: "Raleway", sans-serif;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  background-image: linear-gradient(
+      25deg,
+      rgba(63, 27, 62, 0.52),
+      rgba(63, 174, 221, 0.729)
+    ),
+    url(/img/working-at-night.jpg);
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  background-color: rgba(17, 79, 161, 0.01);
+  background-color: linear-gradient(
+    25deg, 
+    rgba(63, 27, 62, 0.52),
+    rgba(63, 174, 221, 0.729)
+  );
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#blurCanvasTop {
+  left: 0%;
+  top: 0%;
+  position: absolute;
+}
+#blurCanvasBottom {
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+.content {
+  left: 20%;
+  top: 40%;
+  width: 70%;
+  position: relative;
+}
+h1.title {
+  color: white;
+  font-size: 4vw;
+  display: inline;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+p.desc {
+  position: relative;
+  width: 100%;
+  font-size: 4vw;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 200;
+  margin-bottom: 40px;
+}
+.contacts {
+  position: absolute;
+  right: 0%;
+  bottom: 0;
+  margin-bottom: 1vw;
+  margin-right: 1vw;
+}
+.contact li {
+  list-style-type: none;
+  float: left;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font-size: 15px;
+}
+.contact li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.contact li a:hover {
+  color: #df2433;
+}
+.contact li ~ li {
+  margin-left: 1vw;
+}
+.blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.blurTop {
+  left: 40%;
+  top: -110%;
+  transform: rotate(20deg);
+  transform-origin: 0 100%;
+}
+.blurBottom {
+  left: -60%;
+  top: 100%;
+  transform: rotate(20deg);
+  transform-origin: 100% 0%;
+}
+/* fin del canvas */
