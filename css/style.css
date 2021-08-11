@@ -137,7 +137,7 @@ img {
   width: 100%;
 }
 
-.navbar-nav .nav-link.active {
+.navbar-nav .nav-link:hover {
   color: #df2433 !important;
 }
 
@@ -225,8 +225,9 @@ img {
 
   .navbar-dark .navbar-nav .nav-link {
     text-transform: capitalize;
-    font-size: 2em;
-    margin: 20px 0px;
+    text-shadow: #fff 1px 2px;
+    font-size: 1.8em;
+    margin: 20px 10px;
   }
 }
 /* ------------------------------------------------- */
@@ -289,7 +290,7 @@ img {
   width: 150%;
 }
 .content {
-  left: 20%;
+  left: 15%;
   top: 20%;
   bottom: 80%;
   width: 70%;
@@ -404,4 +405,16 @@ p.desc {
   color: white !important;
 }
 /* fin logo footer */
+
+/* boton arriba */
+#up-btn{
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+#up-btn.show{
+  opacity: 1;
+  bottom: 30px;
+}
+/* fin botón arriba */
 /* ----------FIN FOOTER--------- */

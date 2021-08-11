@@ -22,7 +22,7 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/img/favicon/apple-touch-icon.png"
+      href="img/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
@@ -49,9 +49,16 @@
     ></script>
     <!-- script de jquery -->
     <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- script typed -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
-    <header>
+    <header id="top">
       <!-- navbar -->
       <nav
         class="
@@ -62,21 +69,27 @@
           d-flex
           flex-column
         "
+        id="navbar"
       >
         <div class="container">
           <div>
-            <a class="navbar-brand" href="/index.html">
+            <a class="navbar-brand" href="#top">
               <img
-                class="rounded-circle border border-2"
+                class="
+                  rounded-circle
+                  border border-2
+                  d-inline-block
+                  align-text-center
+                "
                 src="/img/avatar-Abel.png"
                 alt="avatar Abel Córdoba González"
                 width="125px"
                 height="auto"
               />
+              <a class="d-none d-md-inline-block" href="#top"
+                >Abel Córdoba González</a
+              >
             </a>
-          </div>
-          <div>
-            <a href="#">Abel Córdoba González</a>
           </div>
           <button
             class="navbar-toggler collapsed"
@@ -94,31 +107,18 @@
           <div class="collapse navbar-collapse" id="navbarSidebar">
             <ul class="navbar-nav ms-auto mb-3 mb-lg-1 fs-3">
               <li class="nav-item">
-                <a
-                  class="nav-link active barraNav-link"
-                  aria-current="page"
-                  href="/index.html"
-                  >About me</a
-                >
+                <a class="nav-link barraNav-link" href="#about">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link barraNav-link" href="/pages/contacto.html"
+                <a class="nav-link barraNav-link" href="#edu-xp"
                   >Educación y Experiencia</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link barraNav-link"
-                  href="/pages/acerca_de_nosotros.html"
-                  >Porfolio</a
-                >
+                <a class="nav-link barraNav-link" href="#porfolio">Porfolio</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link barraNav-link"
-                  href="/pages/acerca_de_nosotros.html"
-                  >Contacto</a
-                >
+                <a class="nav-link barraNav-link" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -128,9 +128,9 @@
     <main>
       <section class="container-fluid main-banner" id="main-banner">
         <canvas class="box" id="box"> </canvas>
-        <div class="content d-flex flex-column mb-5 p-4">
+        <div class="content d-flex flex-column mb-5 me-5 p-4">
           <h1 class="title">Abel Córdoba González</h1>
-          <p class="desc">FullStack Web Developer</p>
+          <p class="desc">.<span class="typing"></span></p>
           <ul class="contact d-flex flex-row">
             <li><a href="mailto:abelcg86@gmail.com">abelcg86@gmail.com</a></li>
             <li>
@@ -160,7 +160,7 @@
       <section class="canvas-wrap">
         <canvas id="canvas-waves"></canvas>
       </section>
-      <section class="container-fluid my-5">
+      <section class="container-fluid my-5" id="about">
         <div class="row g-5 justify-content-center">
           <article class="col-sm-12 col-md-8">
             <div class="card mt-3 mb-5 rounded shadow-lg">
@@ -220,7 +220,7 @@
                 </div>
               </div>
             </div>
-            <div class="card mt-3 mb-5 rounded shadow-lg">
+            <div class="card mt-3 mb-5 rounded shadow-lg" id="edu-xp">
               <img
                 src="/img/man-lifting-weights.jpg"
                 class="card-img-top"
@@ -602,7 +602,7 @@
                       />
                     </a>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12" id="porfolio">
                     <div class="card-body">
                       <a href="/pages/entrada_de_blog.html" class="text-dark">
                         <h5 class="card-title">
@@ -629,7 +629,7 @@
                       />
                     </a>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12" id="contacto">
                     <div class="card-body">
                       <a href="/pages/error404.html" class="text-dark">
                         <h5 class="card-title">
@@ -703,49 +703,57 @@
     </main>
     <footer class="pt-2 bg-info triangle-footer">
       <section class="triangle-bottom-right position-relative">
-        <article class="row flex-lg-column" >
+        <article class="row flex-lg-column">
+          <div class="col-sm-12 text-light mx-1 my-4 p-5">
+            <ul
+              class="
+                nav
+                align-items-center
+                justify-content-center justify-content-lg-start
+                fs-6
+              "
+            >
+              <li class="nav-item rounded-circle border border-danger mx-3">
+                <a
+                  class="nav-link text-light text-center"
+                  href="https://github.com/abelcg"
+                  target="_top"
+                >
+                  <i class="bi bi-github fs-1"></i>
+                </a>
+              </li>
+              <li class="nav-item rounded-circle border border-danger mx-4">
+                <a
+                  class="nav-link text-light text-center"
+                  href="https://twitter.com/login?lang=es"
+                  target="_top"
+                >
+                  <i class="bi bi-twitter rounded-circle fs-1"></i>
+                </a>
+              </li>
+              <li class="nav-item rounded-circle border border-danger mx-3">
+                <a
+                  class="nav-link text-light text-center fs-1"
+                  href="https://www.linkedin.com/in/abel-c%C3%B3rdoba-gonz%C3%A1lez-34830b53/"
+                  target="_top"
+                >
+                  <i class="bi bi-linkedin rounded-circle"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <div
-          class="col-sm-12  text-light mx-1 my-4 p-5"
-        >
-          <ul
             class="
-              nav
-              align-items-center
-              justify-content-center justify-content-lg-start
-              fs-6
+              col-sm-12 col-md-2
+              mx-0
+              my-2
+              px-0
+              py-3
+              text-center
+              align-self-sm-center align-self-lg-end
             "
           >
-            <li class="nav-item rounded-circle border border-danger mx-3">
-              <a
-                class="nav-link text-light text-center"
-                href="https://github.com/abelcg"
-                target="_top"
-              >
-                <i class="bi bi-github fs-1"></i>
-              </a>
-            </li>
-            <li class="nav-item rounded-circle border border-danger mx-4">
-              <a
-                class="nav-link text-light text-center"
-                href="https://twitter.com/login?lang=es"
-                target="_top"
-              >
-                <i class="bi bi-twitter rounded-circle fs-1"></i>
-              </a>
-            </li>
-            <li class="nav-item rounded-circle border border-danger mx-3">
-              <a
-                class="nav-link text-light text-center fs-1"
-                href="https://www.linkedin.com/in/abel-c%C3%B3rdoba-gonz%C3%A1lez-34830b53/"
-                target="_top"
-              >
-                <i class="bi bi-linkedin rounded-circle"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-         
-          <div class="col-sm-12 col-md-2 mx-0 my-2 px-0 py-3 text-center align-self-sm-center align-self-lg-end ">
             <button
               class="
                 btn btn-info
@@ -753,7 +761,6 @@
                 border border-danger
                 hamb-footer
               "
-
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasRight"
@@ -785,13 +792,17 @@
           <div
             class="col-sm-12 text-light py-4 mb-5 text-center align-self-center"
           >
-           <h2 class="fs-1 display-1 fw-bold text-info" id="logo-footer">ACG</h2>
-           <P class="fs-4 text-info">&copy;Derechos Reservados</P>
-           <p class="fs-4 text-info">Abel Córdoba González</p>
+            <h2 class="fs-1 display-1 fw-bold text-info" id="logo-footer">
+              ACG
+            </h2>
+            <p class="fs-4 text-info">&copy;Derechos Reservados</p>
+            <p class="fs-4 text-info">Abel Córdoba González</p>
           </div>
         </article>
-        <div class="position-fixed bottom-0 end-0 me-5">
-          <a class="btn text-info fw-bolder fs-1" href="#" role="button"><i class="bi bi-arrow-up"></i></a>
+        <div class="position-fixed bottom-0 end-0 me-5" id="up-btn">
+          <a class="btn text-info fw-bolder fs-1" href="#top" role="button"
+            ><i class="bi bi-arrow-up"></i
+          ></a>
         </div>
       </section>
     </footer>
@@ -801,5 +812,6 @@
     <script src="/js/scroolled-nav.js"></script>
     <script src="/js/waves.js"></script>
     <script src="/js/particles.js"></script>
+    <script src="/js/types.js"></script>
   </body>
 </html>
