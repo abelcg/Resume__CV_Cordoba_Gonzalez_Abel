@@ -15,6 +15,7 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
   line-height: 1.1;
+  color: #df2433;
 }
 
 h3 {
@@ -375,6 +376,24 @@ p.desc {
 
 /* fin del canvas */
 
+
+/* sección About ---------------------- */
+
+/* div rombo de foto de perfil en about */
+#diamond{
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background: rgba(240, 54, 54, 0.9);
+}
+
+/* Fin de div rombo de perfil---------- */
+
+/* columna Skills--------------------- */
+.skillBar{
+  height: 33px;
+}
+/* Fin de columna skills-------------- */
+
+/* -Fin sección About------------------ */
 /* -----FOOTER------------------ */
 .triangle-footer {
   position: relative;
