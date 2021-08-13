@@ -376,11 +376,10 @@ p.desc {
 
 /* fin del canvas */
 
-
 /* sección About ---------------------- */
 
 /* div rombo de foto de perfil en about */
-#diamond{
+#diamond {
   clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
   background: rgba(240, 54, 54, 0.9);
 }
@@ -388,7 +387,7 @@ p.desc {
 /* Fin de div rombo de perfil---------- */
 
 /* columna Skills--------------------- */
-.skillBar{
+.skillBar {
   height: 33px;
 }
 /* Fin de columna skills-------------- */
@@ -403,7 +402,7 @@ p.desc {
   border-color: white;
 }
 .timeline-card:before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: #fff;
@@ -421,7 +420,216 @@ p.desc {
 }
 /* Fin seccion educación y experiencia---- */
 
+/* --Porfolio---------------------------- */
 
+.porfolio .cc-porfolio-image figure {
+  position: relative;
+  overflow: hidden;
+  text-align: start;
+}
+.porfolio .cc-porfolio-image figure .num-right {
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+}
+
+.porfolio .cc-porfolio-image figure img {
+  position: relative;
+  display: block;
+  width: 100vw;
+  filter: blur(2px);
+  opacity: 1;
+}
+
+.porfolio .cc-porfolio-image figure figcaption {
+    position: absolute;
+    color: #fff;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; } 
+
+ .porfolio .cc-porfolio-image figure .num-right{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 15000;
+ }
+.porfolio .cc-porfolio-image figure figcaption,
+.porfolio .cc-porfolio-image figure figcaption .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.porfolio .cc-porfolio-image figure .num-right .mask {
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.porfolio .cc-porfolio-image figure figcaption .mask {
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.porfolio .cc-porfolio-image figure .h2,
+.porfolio .cc-porfolio-image figure .h4,
+.porfolio .cc-porfolio-image figure p 
+.porfolio .cc-porfolio-image figure button {
+  margin: 0;
+}
+
+.porfolio figure.cc-effect .num-right::before,
+.porfolio figure.cc-effect .num-right::after {
+  position: absolute;
+  content: "";
+  opacity: 0;
+}
+.porfolio figure.cc-effect figcaption::before,
+.porfolio figure.cc-effect figcaption::after {
+  position: absolute;
+  content: "";
+  opacity: 0;
+}
+
+.porfolio figure.cc-effect figcaption::before {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transform: scale(0, 0);
+  transform-origin: 0 0;
+}
+
+.porfolio figure.cc-effect figcaption::after {
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+  transform: scale(0, 0);
+  transform-origin: 100% 0;
+}
+
+.porfolio figure.cc-effect .h2 {
+  margin-top: 5%;
+  padding-right: 30px;
+  transition: transform 0.35s; 
+  opacity: 0;
+}
+@media (max-width: 480px) {
+  .porfolio figure.cc-effect .h2 {
+    font-size: 24px;
+  }
+}
+.porfolio figure.cc-effect .h4 {
+  margin-top: 25%;
+  padding-left: 40px;
+  transition: transform 0.35s;
+  opacity: 0;
+}
+@media (max-width: 480px) {
+  .porfolio figure.cc-effect .h4 {
+    font-size: 14px;
+  }
+}
+
+.porfolio figcaption .container-fluid {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+}
+
+
+.porfolio figure.cc-effect a {
+  padding: 0.18em 0.3em;
+  margin-left: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.35s; 
+  opacity: 0;
+  z-index: 15000;
+} 
+.porfolio figure.cc-effect p {
+  padding: 0.5em 0.7em;
+  padding-left: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.35s;
+  opacity:0;
+}
+
+.porfolio figure.cc-effect .num-right .h2 {
+  transform: scale(1.06, 1.06);
+} 
+.porfolio figure.cc-effect img,
+.porfolio figure.cc-effect .h4 {
+  transform: scale(1.06, 1.06);
+}
+
+
+.porfolio figure.cc-effect .num-right::before,
+.porfolio figure.cc-effect .num-right::after {
+  transition: opacity 0.35s, transform 0.35s;
+}
+.porfolio figure.cc-effect img,
+.porfolio figure.cc-effect figcaption::before,
+.porfolio figure.cc-effect figcaption::after,
+.porfolio figure.cc-effect p {
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.porfolio figure.cc-effect:hover img {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.porfolio figure.cc-effect:hover figcaption::before,
+.porfolio figure.cc-effect:hover figcaption::after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.porfolio figure.cc-effect:hover figcaption:before {
+  background: rgba(27, 23, 23, 0.8);
+}
+
+.porfolio figure.cc-effect:hover  .h2 {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  color: rgba(240, 54, 54, 0.9);
+  z-index: 200000;
+}
+
+.porfolio figure.cc-effect:hover .h4,
+.porfolio figure.cc-effect:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  color: rgba(240, 54, 54, 0.9);
+}
+
+.porfolio figure.cc-effect:hover a {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  color: rgba(240, 54, 54, 0.9);
+  position: relative;
+  z-index: 15000;
+} 
+
+.porfolio figure.cc-effect:hover figcaption::after,
+.porfolio figure.cc-effect:hover .num-right::after,
+.porfolio figure.cc-effect:hover .num-right .h2,
+.porfolio figure.cc-effect:hover .h4,
+.porfolio figure.cc-effect:hover p,
+.porfolio figure.cc-effect:hover img {
+  transition-delay: 0.15s;
+}
+
+/* --Fin Porfolio----------------------- */
 /* -----FOOTER------------------ */
 .triangle-footer {
   position: relative;
@@ -448,7 +656,7 @@ p.desc {
 }
 
 /* ------------botón hamburguesa footer-------------- */
-.hamb-footer{
+.hamb-footer {
   position: relative;
   right: 120%;
 }
@@ -474,12 +682,12 @@ p.desc {
 /* fin logo footer */
 
 /* boton arriba */
-#up-btn{
+#up-btn {
   opacity: 0;
   transition: all 0.3s ease;
 }
 
-#up-btn.show{
+#up-btn.show {
   opacity: 1;
   bottom: 30px;
 }
