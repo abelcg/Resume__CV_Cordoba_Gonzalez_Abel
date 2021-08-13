@@ -641,6 +641,7 @@ p.desc {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+
 }
 
 /*-------Media Queries Sidebar ----------------------- */
@@ -712,6 +713,7 @@ p.desc {
 }
 /*----- Media Queries para dispositivos Large: Tablet */
 @media all and (min-width: 769px) and (max-width: 992px) {
+
 }
 
 /*------ Media Queries para dispositivos Medium: celulares ---------*/
@@ -739,10 +741,10 @@ p.desc {
   .content {
     left: 0%;
     top: 20%;
-    bottom: 80%;
-    width: 70%;
+    bottom: 130%;
+    width: 100%;
     position: relative;
-  }
+}
   /* titulo y subtitulo de banner */
   h1.title {
     font-size: 6vw;
@@ -760,7 +762,7 @@ p.desc {
     list-style-type: none;
     color: rgba(255, 255, 255, 0.8);
     font-weight: 300;
-    font-size: 10px;
+    font-size: 12px;
 }
   /* ----------------------------- */
   /* comillas en about------------ */
