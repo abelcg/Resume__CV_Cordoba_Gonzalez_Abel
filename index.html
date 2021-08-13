@@ -450,20 +450,20 @@
       <!-----Datos Personales-Contacto---------------------------- -->
       <!-- formulario de comentario -->
       <section
-        class="container rounded shadow-lg bg-light p-4 text-start"
+        class="container rounded shadow-lg bg-light py-4 px-0 text-start"
         id="contacto"
         data-aos="fade-down"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1500"
       >
-        <div class="row g-0">
+        <div class="row g-5">
           <div class="col-sm-12 col-md-6">
             <div class="mt-3 mb-5 text-center">
               <h3 class="fs-1">Contacto</h3>
               <h4 class="fs-2 pt-4 text-info">Deja tu mensaje</h4>
-              <form class="form-inline mb-3 me-3 p-4">
+              <form class="form-inline mb-3 px-3 py-4">
                 <input
-                  class="form-control form-control-sm my-3 me-5 p-4"
+                  class="form-control form-control-sm my-3 p-4"
                   type="text"
                   placeholder="Tu Nombre"
                   aria-label="nombre"
@@ -471,7 +471,7 @@
                   required
                 />
                 <input
-                  class="form-control form-control-sm me-5 p-4"
+                  class="form-control form-control-sm p-4"
                   type="email"
                   placeholder="Tu email"
                   aria-label="email"
@@ -479,7 +479,7 @@
                   required
                 />
                 <textarea
-                  class="form-control my-3 me-5 p-4"
+                  class="form-control my-3 p-4"
                   name="comentario"
                   id="comentario"
                   cols="20"
@@ -498,33 +498,44 @@
             </div>
           </div>
           <div class="col-sm-12 col-md-6">
-            <div class="mb-3 mt-3 mb-5">
+            <div class="mb-3 mt-3 mb-5 px-4">
               <h3 class="fs-1">Datos Personales</h3>
             </div>
-            <div class="fs-2 my-4">
-              <i class="fas fa-at me-4"></i>
-              <strong>abelcg86@gmail.com</strong>
-            </div>
-            <div class="fs-2 my-4">
-              <i class="fas fa-phone-alt me-4"></i>
-              <strong>+54 381-5415613</strong>
-            </div>
-            <div class="fs-2 my-4">
-              <i class="fas fa-map-marker-alt me-4"></i>
-              <strong>Srgto. Cabral 921 | Tucumán | ARG</strong>
-            </div>
-            <div class="fs-2 my-4">
-              <i class="fas fa-map-marker-alt me-4"></i>
-              <strong>DNI: 32459279</strong>
-            </div>
-            <div class="fs-2 my-4">
-              <i class="far fa-calendar-alt me-4"></i>
-              <strong>20/10/86</strong>
-            </div>
-            <div class="fs-2 my-4">
-              <i class="fas fa-language me-3"></i>
-              <strong>Idiomas: Ingles B2+ | Portugués C1</strong>
-            </div>
+            <ul
+              class="
+                list-group list-group-flush
+                fs-5
+                my-4
+                mx-3
+                d-flex
+                justify-content-between
+              "
+            >
+              <li class="list-group-item">
+                <i class="fas fa-at my-3 pe-3"> </i>
+                <strong>abelcg86@gmail.com</strong>
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-phone-alt my-3 pe-3"> </i>
+                <strong>+54 381-5415613</strong>
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-map-marker-alt my-3 pe-3"> </i>
+                <strong>Srgto. Cabral 921 | Tuc | ARG</strong>
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-id-card my-3 pe-3"> </i>
+                <strong>DNI: 32459279</strong>
+              </li>
+              <li class="list-group-item">
+                <i class="far fa-calendar-alt my-3 pe-3"> </i>
+                <strong>20/10/86</strong>
+              </li>
+              <li class="list-group-item">
+                <i class="fas fa-language my-3 pe-3"> </i>
+                <strong>Inglés B2+ | Portugués C1</strong>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
