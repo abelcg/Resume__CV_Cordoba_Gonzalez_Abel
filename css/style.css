@@ -190,69 +190,6 @@ img {
   font-family: "Raleway", sans-serif;
 }
 /* ------- Fin Animación botón hamburguesa-------------*/
-
-/*-------Media Queries Sidebar ----------------------- */
-
-@media (max-width: 992px) {
-  .navbar-collapse {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0px; /* ajusta height del navbar */
-    right: 0;
-    padding-top: 0px;
-    padding-left: 125px;
-    padding-right: 80px;
-    padding-bottom: 60px;
-    width: 100%;
-    height: 100%;
-  }
-
-  .navbar-collapse.collapsing {
-    right: -75%;
-    transition: height 0s ease;
-  }
-
-  .navbar-collapse.show {
-    right: 0;
-    background: rgb(40, 40, 40);
-    transition: right 300ms ease-in-out;
-  }
-
-  .navbar-toggler.collapsed ~ .navbar-collapse {
-    transition: right 500ms ease-in-out;
-  }
-
-  .navbar-dark .navbar-nav .nav-link {
-    text-transform: capitalize;
-    text-shadow: #fff 1px 2px;
-    font-size: 1.8em;
-    margin: 20px 10px;
-  }
-  .navbar-dark .navbar-nav .nav-link::after {
-    content: attr(data-after);
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(-40%, -40%) scale(0);
-    color: rgba(240, 248, 255, 0.021);
-    text-shadow: none;
-    font-size: 5rem;
-    letter-spacing: 40px;
-    z-index: -1;
-    transform: 0.3s ease letter-spacing;
-  }
-  .navbar-dark .navbar-nav .nav-link:hover::after {
-    transform: translate(-40%, -40%) scale(2);
-    letter-spacing: initial;
-  }
-  .barraNav-link:hover::after {
-    width: 0%;
-  }
-}
-/* ------------------------------------------------- */
-
 /* canvas waves */
 .canvas-wrap {
   max-width: 100%;
@@ -374,7 +311,7 @@ p.desc {
   height: 30%;
 }
 
-/* fin del canvas */
+/* fin del canvas---------------------- */
 
 /* sección About ---------------------- */
 
@@ -442,19 +379,20 @@ p.desc {
 }
 
 .porfolio .cc-porfolio-image figure figcaption {
-    position: absolute;
-    color: #fff;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden; } 
+  position: absolute;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
 
- .porfolio .cc-porfolio-image figure .num-right{
+.porfolio .cc-porfolio-image figure .num-right {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 15000;
- }
+}
 .porfolio .cc-porfolio-image figure figcaption,
 .porfolio .cc-porfolio-image figure figcaption .mask {
   position: absolute;
@@ -479,8 +417,14 @@ p.desc {
 
 .porfolio .cc-porfolio-image figure .h2,
 .porfolio .cc-porfolio-image figure .h4,
-.porfolio .cc-porfolio-image figure p 
-.porfolio .cc-porfolio-image figure button {
+.porfolio
+  .cc-porfolio-image
+  figure
+  p
+  .porfolio
+  .cc-porfolio-image
+  figure
+  button {
   margin: 0;
 }
 
@@ -518,7 +462,7 @@ p.desc {
 .porfolio figure.cc-effect .h2 {
   margin-top: 5%;
   padding-right: 30px;
-  transition: transform 0.35s; 
+  transition: transform 0.35s;
   opacity: 0;
 }
 @media (max-width: 480px) {
@@ -544,33 +488,31 @@ p.desc {
   bottom: 20px;
 }
 
-
 .porfolio figure.cc-effect a {
   padding: 0.18em 0.3em;
   margin-left: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  transition: transform 0.35s; 
+  transition: transform 0.35s;
   opacity: 0;
   z-index: 15000;
-} 
+}
 .porfolio figure.cc-effect p {
   padding: 0.5em 0.7em;
   padding-left: 40px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: transform 0.35s;
-  opacity:0;
+  opacity: 0;
 }
 
 .porfolio figure.cc-effect .num-right .h2 {
   transform: scale(1.06, 1.06);
-} 
+}
 .porfolio figure.cc-effect img,
 .porfolio figure.cc-effect .h4 {
   transform: scale(1.06, 1.06);
 }
-
 
 .porfolio figure.cc-effect .num-right::before,
 .porfolio figure.cc-effect .num-right::after {
@@ -598,7 +540,7 @@ p.desc {
   background: rgba(27, 23, 23, 0.8);
 }
 
-.porfolio figure.cc-effect:hover  .h2 {
+.porfolio figure.cc-effect:hover .h2 {
   opacity: 1;
   transform: translate3d(0, 0, 0);
   color: rgba(240, 54, 54, 0.9);
@@ -618,7 +560,7 @@ p.desc {
   color: rgba(240, 54, 54, 0.9);
   position: relative;
   z-index: 15000;
-} 
+}
 
 .porfolio figure.cc-effect:hover figcaption::after,
 .porfolio figure.cc-effect:hover .num-right::after,
@@ -693,3 +635,185 @@ p.desc {
 }
 /* fin botón arriba */
 /* ----------FIN FOOTER--------- */
+
+/*------ Configuración  de las medias queries ----------*/
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/*-------Media Queries Sidebar ----------------------- */
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px; /* ajusta height del navbar */
+    right: 0;
+    padding-top: 0px;
+    padding-left: 125px;
+    padding-right: 80px;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .navbar-collapse.collapsing {
+    right: -75%;
+    transition: height 0s ease;
+  }
+
+  .navbar-collapse.show {
+    right: 0;
+    background: rgb(40, 40, 40);
+    transition: right 300ms ease-in-out;
+  }
+
+  .navbar-toggler.collapsed ~ .navbar-collapse {
+    transition: right 500ms ease-in-out;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    text-transform: capitalize;
+    text-shadow: #fff 1px 2px;
+    font-size: 1.8em;
+    margin: 20px 10px;
+  }
+  .navbar-dark .navbar-nav .nav-link::after {
+    content: attr(data-after);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-40%, -40%) scale(0);
+    color: rgba(240, 248, 255, 0.021);
+    text-shadow: none;
+    font-size: 5rem;
+    letter-spacing: 40px;
+    z-index: -1;
+    transform: 0.3s ease letter-spacing;
+  }
+  .navbar-dark .navbar-nav .nav-link:hover::after {
+    transform: translate(-40%, -40%) scale(2);
+    letter-spacing: initial;
+  }
+  .barraNav-link:hover::after {
+    width: 0%;
+  }
+}
+/* ------------------------------------------------- *
+
+
+/*-Media Queries para dispositivos xl, xxl: Algunas Tablet, notebook, tv --*/
+
+@media all and (min-width: 993px) {
+}
+/*----- Media Queries para dispositivos Large: Tablet */
+@media all and (min-width: 769px) and (max-width: 992px) {
+}
+
+/*------ Media Queries para dispositivos Medium: celulares ---------*/
+
+@media all and (min-width: 576px) and (max-width: 768px) {
+  /* LOGO Navbar */
+  .navbar-brand img {
+    width: 150px;
+  }
+  /* botón hamburguesa footer ----*/
+  .hamb-footer {
+    position: relative;
+    right: -250%;
+}
+  /* ---------------------------- */
+}
+
+/*------ Media Queries para dispositivos extra small ---*/
+@media all and (min-width: 319px) and (max-width: 575px) {
+  /* LOGO Navbar */
+  .navbar-brand img {
+    width: 100px;
+  }
+  /* banner principal */
+  .content {
+    left: 0%;
+    top: 20%;
+    bottom: 80%;
+    width: 70%;
+    position: relative;
+  }
+  /* titulo y subtitulo de banner */
+  h1.title {
+    font-size: 6vw;
+    display: inline;
+    font-weight: 500;
+  }
+  p.desc {
+    width: 100%;
+    font-size: 4vw;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  .contact li {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 10px;
+}
+  /* ----------------------------- */
+  /* comillas en about------------ */
+  .blockquote {
+    font-size: medium;
+}
+  /* ---------------------------- */
+  /* botón hamburguesa footer ----*/
+  .hamb-footer {
+    position: relative;
+    right: -2%;
+}
+  /* ---------------------------- */
+}
+
+/* ----------- Samsung Galaxy-Fold----------- */
+@media (max-device-width: 280px) and (max-device-height: 653px) {
+  /* LOGO Navbar */
+  .navbar-brand img {
+    width: 100px;
+  }
+  /* banner principal */
+  .content {
+    left: 0%;
+    top: 20%;
+    bottom: 80%;
+    width: 70%;
+    position: relative;
+  }
+  /* titulo y subtitulo de banner */
+  h1.title {
+    font-size: 6vw;
+    display: inline;
+    font-weight: 500;
+  }
+  p.desc {
+    width: 100%;
+    font-size: 5vw;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    margin-bottom: 20px;
+  }
+  .contact li {
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+    font-size: 10px;
+}
+  /* ----------------------------- */
+  /* botón hamburguesa footer ----*/
+  .hamb-footer {
+    position: relative;
+    right: -2%;
+}
+  /* ---------------------------- */
+}
