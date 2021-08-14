@@ -641,7 +641,20 @@ p.desc {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
-
+ /* porfolio-------------------- */
+  .porfolio figure.cc-effect .h2 {
+    font-size: 44px;
+  }
+  .porfolio figure.cc-effect .h4 {
+    font-size: 34px;
+  }
+  .porfolio figure.cc-effect p {
+   font-size: x-large;
+  }
+  .porfolio figure.cc-effect a{
+    font-size: x-large;
+  }
+  /* --------------------------- */
 }
 
 /*-------Media Queries Sidebar ----------------------- */
@@ -710,10 +723,37 @@ p.desc {
 /*-Media Queries para dispositivos xl, xxl: Algunas Tablet, notebook, tv --*/
 
 @media all and (min-width: 993px) {
+  /* porfolio------------------- */
+  .porfolio figure.cc-effect .h2 {
+    font-size: 44px;
+  }
+  .porfolio figure.cc-effect .h4 {
+    font-size: 34px;
+  }
+  .porfolio figure.cc-effect p {
+    font-size: x-large;
+   }
+   .porfolio figure.cc-effect a{
+    font-size: x-large;
+  }
+  /* --------------------------- */
 }
 /*----- Media Queries para dispositivos Large: Tablet */
 @media all and (min-width: 769px) and (max-width: 992px) {
-
+  /* porfolio------------------ */
+  .porfolio figure.cc-effect .h2 {
+    font-size: 34px;
+  }
+  .porfolio figure.cc-effect .h4 {
+    font-size: 24px;
+  }
+  .porfolio figure.cc-effect p {
+    font-size: x-large;
+   }
+   .porfolio figure.cc-effect a{
+     font-size: x-large;
+   }
+  /* -------------------------- */
 }
 
 /*------ Media Queries para dispositivos Medium: celulares ---------*/
